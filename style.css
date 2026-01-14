@@ -72,6 +72,60 @@
     flex: 1;
 }
 
+.handiwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin: 0.75rem 0 2rem 0;
+}
+
+.handiwork-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.handiwork-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 120ms ease, opacity 120ms ease;
+}
+
+.handiwork-caption {
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.handiwork-item:hover img {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.handiwork-item:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+    border-radius: 12px;
+}
+
+.project-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-content hr {
+    margin: 1.5rem 0;
+}
+
+.project-content h2 {
+    margin: 1.5rem 0 0.75rem 0;
+}
+
 @media (max-width: 500px) {
     .hero {
         flex-direction: column;
@@ -94,5 +148,9 @@
 
     .timeline-year {
         width: auto;
+    }
+
+    .handiwork-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unitree Go2 | Travis Reed Mendoza</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <p><a href="../index.html">← home</a></p>
+
+        <h1>Unitree Go2</h1>
+        <p><a href="https://www.travisreedmendoza.com/unitree-go2/">source</a></p>
+
+        <div class="project-content">
+<p>One of my clients purchased a Go2 Pro to test the utility of a quadruped robot as a mobile sensor bus, and I had the privilege of learning to operate it. Here’s what I found.</p>
+
+<hr>
+
+<h2>Capabilities</h2><p><strong>Teleoperation mode: </strong>The operator uses joysticks to control Go2 movement directly.</p><p><strong>Follow mode: </strong>The Go2 can follow the operator as if it were a dog heeling. This function can be used with or without obstacle avoidance.</p><p><strong>Single waypoint navigation: </strong>The operator can set a waypoint within a previously mapped area. The Go2 will navigate to the waypoint and avoid obstacles on the way.</p><p><strong>Multi waypoint navigation / patrol: </strong>The operator can save a set of waypoints within a map and command the Go2 to loop through those waypoints, effectively creating a patrol route.</p><p><strong>Mobility: </strong>The Go2 has great mobility. It can walk on grass and go up and down curbs with no problem.</p><p><strong>Camera and LiDAR feeds: </strong>The built-in camera and ‘4D’ LiDAR are high resolution and low latency.</p><p><strong>Tricks: </strong>For fun, the Go2 can shake hands, make hearts, dance, and even handstand.</p><p><strong>Graphical programming: </strong>The Unitree app includes a rudimentary graphical programming feature. It’s more like toy programming for kids than it is actually programming the robot to do things that would be interesting for industrial purposes. There is an EDU model of the Go2 which provides proper SDK access, but it costs multiples of what the Pro and the Air models cost.</p>
+
+<p><img src="assets/unitree-go2/thereshegoes.gif" alt="" loading="lazy" decoding="async"></p>
+
+<hr>
+
+<p><img src="assets/unitree-go2/teleoperation.gif" alt="" loading="lazy" decoding="async"></p>
+
+<p><img src="assets/unitree-go2/Go2_WalksDownCurb.gif" alt="" loading="lazy" decoding="async"></p>
+
+<p><img src="assets/unitree-go2/Handstand.png" alt="" loading="lazy" decoding="async"></p>
+
+<hr>
+
+<p><img src="assets/unitree-go2/WaypointsNavigation.gif" alt="" loading="lazy" decoding="async"></p>
+
+<p><img src="assets/unitree-go2/AppScreenshot.png" alt="" loading="lazy" decoding="async"></p>
+
+<p><img src="assets/unitree-go2/GraphicalProgramming.png" alt="" loading="lazy" decoding="async"></p>
+
+<hr>
+
+<h2>Limitations</h2><p><strong>Extendability</strong>: The Go2 Pro and Air models do not come with the SDK enabled nor do they have pre-drilled mounting holes. This makes it difficult to extend the functions of the Go2 with other sensors and actuators.</p><p><strong>98% obstacle avoidance</strong>: The obstacle avoidance is <em>very</em> good on the Go2 for such a cost-saving robot. That said, I have seen it run into a door on its way out of a small office while it was supposed to be in autonomous navigation and obstacle avoidance mode. So, the obstacle avoidance still isn’t 99.99%.</p><p><strong>Start up</strong>: On start up, I saw the Go2 fail to stand and balance properly. Instead of righting itself, it flailed its legs around wildly. This happened three times on the first day I started using it and hasn’t happened again since then. I do not know how to repeat this problem and the Pro model does not show error logs to the user, so I have no way of knowing why this happened.</p><p><strong>Unexpected shutdown</strong>: The Go2 has, without warning, powered off completely in the middle of its movement and collapsed to the floor. I suspect this happened because I was trying to control it with two different controllers at the same time, but in any case it was not a soft landing, there was no warning beforehand, and there was also no error message after the fact to explain to me what had happened.</p>
+
+<p><img src="assets/unitree-go2/Go2_FailsStandUp.gif" alt="" loading="lazy" decoding="async"></p>
+        </div>
+    </div>
+</body>
+</html>
