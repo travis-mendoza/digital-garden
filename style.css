@@ -159,6 +159,10 @@ body {
 }
 
 .project-content figure.horizontal-figure {
+    max-width: none;
+}
+
+.project-content .go2-app-section figure.horizontal-figure {
     max-width: 470px;
 }
 
