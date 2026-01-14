@@ -162,6 +162,10 @@
     justify-content: center;
 }
 
+.project-content figure + .image-grid {
+    margin-top: 2.5rem;
+}
+
 .image-grid figure {
     margin: 0;
     display: flex;
