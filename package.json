@@ -1,0 +1,24 @@
+{
+  "name": "digital-garden",
+  "version": "1.0.0",
+  "description": "My personal website (i.e., my digital garden to tend to). Contains my social links, portfolio, CV, and things I love (and don’t), inspired by lightweight HTML‑first websites.",
+  "main": "generate-resume.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travis-mendoza/digital-garden.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/travis-mendoza/digital-garden/issues"
+  },
+  "homepage": "https://github.com/travis-mendoza/digital-garden#readme",
+  "dependencies": {
+    "puppeteer": "^24.40.0"
+  }
+}
