@@ -1,12 +1,16 @@
 // Run with: node generate-resume.js
 // Re-run any time you update resume.html to regenerate cv/resume.pdf
+// Run with: node generate-resume.js --ats to generate cv/resume-ats.pdf
 
 const puppeteer = require("puppeteer");
 const path = require("path");
 
 (async () => {
-    const inputPath = path.join(__dirname, "resume.html");
-    const outputPath = path.join(__dirname, "cv", "resume.pdf");
+    const isAtsMode = process.argv.includes("--ats");
+    const inputFile = isAtsMode ? "resume-ats.html" : "resume.html";
+    const outputFile = isAtsMode ? "resume-ats.pdf" : "resume.pdf";
+    const inputPath = path.join(__dirname, inputFile);
+    const outputPath = path.join(__dirname, "cv", outputFile);
 
     const browser = await puppeteer.launch();
     const page = await browser.newPage();

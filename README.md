@@ -5,6 +5,9 @@ My personal website (i.e., my digital garden to tend to). Contains my social lin
 ## Generate my resume from the timeline
 `node generate-resume.js`
 
+## Generate ATS-friendly resume
+`node generate-resume.js --ats`
+
 ## Under construction
 Here's a list of what's coming:
 * dynamic scrolling with added images!
