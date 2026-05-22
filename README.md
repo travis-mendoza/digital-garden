@@ -8,6 +8,11 @@ My personal website (i.e., my digital garden to tend to). Contains my social lin
 ## Generate ATS-friendly resume
 `node generate-resume.js --ats`
 
+## Generate a tailored resume from any HTML file
+`node generate-resume.js path/to/custom-resume.html`
+
+Writes the PDF to `resumes/` using the input file basename, e.g. `apple-hardware-robotics-test.html` becomes `resumes/apple-hardware-robotics-test.pdf`.
+
 ## Under construction
 Here's a list of what's coming:
 * dynamic scrolling with added images!
